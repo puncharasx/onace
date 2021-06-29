@@ -1,0 +1,16 @@
+@use '../custom' as *;
+
+.btn-check:focus + .btn, .btn:focus {
+    outline: 0;
+    box-shadow:none !important;
+}
+
+.socail{
+    color:$black;
+}
+.facebook {
+    color:#1773EA;
+}
+.line {
+    color:#06C152;
+}

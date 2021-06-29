@@ -1,6 +1,6 @@
 ### Exchanges
 GET https://rest.coinapi.io/v1/exchanges
-X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+X-CoinAPI-Key : 4F86A739-9681-4BB6-A537-66D1C91C41CC
 
 ### Exchanges Icon
 GET https://rest.coinapi.io/v1/exchanges/icons/20

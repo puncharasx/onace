@@ -9,9 +9,9 @@ const Header = () => {
             <div className="container  ">
                 <div className="row">
                     <div className="headerinfo text-align-center text-center">
-                        <h2 className="pb-2">ซื้อขายคริปโตในไม่กี่นาที</h2>
-                        <p className="pb-2">ร่วมเป็นส่วนหนึ่งของตลาดเเลกเปลี่ยนคริปโตที่ใหญ่ที่สุดในโลก</p>
-                        <button className="btn btn-primary headerinfo--button">ลงทะเบียนตอนนี้</button>
+                        <h1 className="text-uppercase text-primary">onace</h1>
+                        <h2 className="pb-2 text-uppercase">cryptocurrency</h2>
+                        <button className="btn btn-primary headerinfo--button font">Join Now</button>
                     </div>
                 </div>
             </div>

@@ -5,3 +5,9 @@
 @use './sections/section-header';
 @use './sections/section-navbar';
 @use './sections/section-table';
+@use './sections/section-infomation';
+@use './sections/section-footer';
+
+//COMPONENTS
+@use './components/typology';
+@use './components/buttons';

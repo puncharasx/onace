@@ -2,6 +2,7 @@ import React from "react";
 import styles from '../styles/table.module.scss'
 import Image from 'next/image'
 const Table = ({data}) => {
+    const rand = Math.floor(Math.random() * 200)
   return (
     <section className="section-table">
         <div className="container mt-5">
@@ -11,66 +12,35 @@ const Table = ({data}) => {
 	<thead>
 
 		<tr>
-			<th><h1>ชื่อ</h1></th>
-			<th><h1>ราคาล่าสุด</h1></th>
-			<th><h1>Clicks</h1></th>
+			<th><h1>Name</h1></th>
+			<th><h1>Price</h1></th>
 		</tr>
 	</thead>
 	<tbody>
         {
-            
-        data.slice(0,10).map((d) => {
+        data[0].error ? <h2 className="text-center">API ERROR</h2> :
+        data.slice(rand,rand+5).map((d,index) => {
             return (
-<tr key={d.asset_id}>
+<tr key={index}>
 			<td>
             <div className="d-flex">
             <Image
-        src={d.url}
+        src={d.url || 'https://bitcoin.org/img/icons/opengraph.png'}
         alt=""
         width={25}
         height={25}
       /> 
-             {d.asset_id}
+             {`${d.name} (${d.asset_id})`}
             </div>
             </td>
-			<td>9518</td>
-			<td>6369</td>
+			<td className="font">{d.price_usd ? new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(d.price_usd) : 'Not Found'}</td>
 		</tr>
             )
             
         })}
 		
-        
 	</tbody>
 </table>
-                    {/* {/* <table className="table table-hover">
-                        <thead>
-                        <tr>
-                            <th scope="col">ชื่อ</th>
-                            <th scope="col">Last Price</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            
-                           {/*  {
-                                 exchanges.exchanges.map((data) =>{
-                                     let i = 0;
-                                     return (
-                                        <tr key={data.exchange_id}>
-                                    <th scope="row">{i++}</th>
-                                    <td>{data.exchange_id}</td>
-                                    <td>{data.name}</td>
-                                    <td>{data.website}</td>
-                                </tr>
-                                     )
-                                
-                                })
-                            } */}
-                        
-                        {/* </tbody>
-                    </table>  */}
                 </div>
                
             </div>
