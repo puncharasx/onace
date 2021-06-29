@@ -1,0 +1,26 @@
+### Exchanges
+GET https://rest.coinapi.io/v1/exchanges
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+### Exchanges Icon
+GET https://rest.coinapi.io/v1/exchanges/icons/20
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+### Exchanges By ID
+GET https://rest.coinapi.io/v1/exchanges/ECB
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+### FILTER_EXCHANGE
+GET https://rest.coinapi.io/v1/exchanges?filter_exchange_id=ECB,KRAKEN,BINANCE
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+### ASSETS
+GET https://rest.coinapi.io/v1/assets/
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+### ASSETS
+GET https://rest.coinapi.io/v1/assets/icons/50
+X-CoinAPI-Key : B79CA3D1-F8E4-4F72-93C0-23F003043731
+
+
+

@@ -1,0 +1,21 @@
+@use '../custom' as *;
+.section-header {
+    height: 20rem;
+    background-color: $black;
+}
+
+.headerinfo {
+    padding: 2.5rem 0 0;
+    line-height: 46px;
+    h2{
+
+        color: $white;
+        font-size: 2rem;
+    }
+    p{
+        color:$white;
+    }
+    &--button{
+        padding: 0.6rem 1.5rem;
+    }
+}
